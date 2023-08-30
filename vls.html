@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VLS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+
+
+
+<body>
+
+  <!--スマホ版ナビバー-->
+ <div class="nav-sp">
+  <button class="btn" type="button"
+      data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+      <i class="fa-solid fa-bars-staggered fa-fade fa-3x" style="color: #ffffff;"></i>
+  </button>
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <!--<h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>-->
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="nav-sp-list">
+        <p>-Menu-</p>
+        <li class="nav-sp-item">
+          <a class="nav-link active text-light" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-sp-item">
+          <a class="nav-link active text-light" href="info.html">Infomation</a>
+        </li>
+        <li class="nav-sp-item">
+          <a class="nav-link active text-light" href="#">O.MO”TEC”NA.SHI</a>
+        </li>
+        <li class="nav-sp-item">
+          <a class="nav-link active text-light" href="room.html">Your Room</a>
+        </li>
+        <li class="nav-sp-item">
+          <a class="nav-link active text-light" href="#">Meal</a>
+        </li>
+        <li class="nav-sp-item">
+        <li class="nav-sp-item">
+          <a class="nav-link active text-light" href="">VLS</a>
+        </li>
+        <li class="nav-sp-item">
+        <li class="nav-sp-item">
+          <a class="nav-link active text-light" href="qa.html">Q&A</a>
+        </li>
+        <li class="nav-sp-item">
+          <a class="nav-link active text-light" href="#" tabindex="-1" aria-disabled="true">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!--ここまで-->
+
+
+   <!--スライドショー-->
+   <div class="pcslide">
+    <img src="img/vls-roomslide.png"alt="hotel">
+     <img src="img/vls-coupleslide.png" alt="green">
+     <img src="img/vls-familyslide.jpg" alt="door">
+  </div>
+<div class="hotelname">
+  -Hotel Singularity-
+  <p class="yroom-title">Various Landscape System</p>
+</div>
+
+
+
+<div class="container-fluid-vlsfeature">
+    <div class="row">
+     <h2 class="vlsfeature-title">さまざまな景色が思いのまま</h2>
+      <div id="vlsfeature" class="carousel slide mt-3" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#vlefeature" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#vlsfeature" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#vlsfeature" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#vlsfeature" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#vlsfeature" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#vlsfeature" data-bs-slide-to="5" aria-label="Slide 6"></button>        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/VariousLandscapeSystem.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <div class="h5">AIによるベッドメイク</div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/vls-sea.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <div class="h5">5D VR</div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/vls-aurora.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <div class="h5">館内フロア</div>
+              <p></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/vls-waterfall.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <div class="h5">restroom</div>
+              <p></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/vls-universe.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <div class="h5">restroom</div>
+              <p></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/vls-fantasy.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <div class="h5">restroom</div>
+              <p></p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#vlsfeature" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#vlsfeature" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+<!--ナビゲーション-->
+<ul class="nav">
+  <p>-MENU-</p>
+  <li class="nav-item">
+    <a class="nav-link active text-light" aria-current="page" href="index.html">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active text-light" href="info.html">Infomation</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active text-light" href="#">O.MO”TEC”NA.SHI</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active text-light" href="room.html">Your Room</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active text-light" href="#">Meal</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active text-light" href="#">VLS</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active text-light" href="qa.html">Q&A</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active text-light" href="#" tabindex="-1" aria-disabled="true">Contact</a>
+  </li>
+</ul>
+  </div>
+
+
+
+  <!--メイン-->
+ <div class="room-intro">
+  部屋の大きさや”VLS”の有無によって価格が変わります。<br>VLSについては以下をご参考ください。
+  <p class="room-intro-link"><a href="#yroom-title">Various Landscape Systemとは</a></p>
+ </div>
+
+  <div class="container-fluid-yroom1">
+  <div class="row">
+    <div class="col-6 yroom1text mt-3">
+      <h2 class="yroom">シンギュラリティ・シングル</h2>
+         お一人様の宿泊に最も適したお部屋です。<br>
+         ゆっくりと最先端のテクノロジーをお楽しみください。<br>
+         宿泊人数：1名様まで  
+       <div class="mainbtn mt-2">
+         <a href="#" class="btn mainbtn btn-light ">
+           予約する
+         </a>
+       </div>
+   </div>
+       <div class="col-6 yroom1 mt-3">
+          <a href="#">
+            <div id="yroom1" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#yroom1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#yroom1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#yroom1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+               <div class="carousel-inner">
+                  <div class="carousel-item active">
+                     <img src="img/singlestan-vls.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                     <img src="img/singlestan-vlsex.jpg" class="d-block w-100" alt="...">   
+                  </div>
+                  <div class="carousel-item">
+                     <img src="img/singlefaci2.jpg" class="d-block w-100" alt="...">
+                  </div>
+               </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#yroom1" data-bs-slide="prev">
+                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                 <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#yroom1" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </a>
+       </div>
+  </div>
+</div>
+
+
+ <div class="container-fluid-yroom2">
+    <div class="row">
+         <div class="col-6 yroom2 mt-3">
+               <a href="">
+                  
+
+                <div id="yroom2" class="carousel slide" data-bs-ride="carousel">
+                 <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#yroom2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#yroom2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#yroom2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                   <div class="carousel-inner">
+                      <div class="carousel-item active">
+                         <img src="img/doublestan.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                         <img src="img/doublestan-vls.jpg" class="d-block w-100" alt="...">   
+                      </div>
+                      <div class="carousel-item">
+                         <img src="img/doublestan-vls-ex.jpg" class="d-block w-100" alt="...">
+                      </div>
+                   </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#yroom2" data-bs-slide="prev">
+                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                     <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#yroom2" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+
+
+               </a>
+         </div>
+         <div class="col-6 yroom2text mt-3">
+          <h2 class="yroom">シンギュラリティ・ダブル</h2>
+             ダブルベッドでゆったりとお過ごしいただけます。<br>
+             お部屋を広くお使いになりたい方やご家族様におすすめです。<br>
+             宿泊人数：～3名様まで
+                <div class="mainbtn mt-2">
+                 <a href="#" class="btn mainbtn btn-light ">
+                   予約する
+                 </a>
+               </div>
+        </div>
+    </div>
+ </div>
+
+
+
+
+
+ <div class="container-fluid-yroom3">
+  <div class="row">
+     <div class="col-6 yroom3text mt-3">
+      <h2 class="yroom">シンギュラリティ・クイーン</h2>
+           クイーンサイズのベッドと広々としたお部屋で、贅沢な時間をお過ごしください。<br>
+           カップルでのご利用やご家族様に人気のお部屋です。<br>
+           宿泊人数：～5名様まで
+        <div class="mainbtn mt-2">
+           <a href="#" class="btn mainbtn btn-light ">
+            予約する
+           </a>
+        </div>
+   </div>
+      <div class="col-6 yroom3 mt-3">
+         <a href="#">
+          <div id="yroom3" class="carousel slide" data-bs-ride="carousel">
+           <div class="carousel-indicators">
+              <button type="button" data-bs-target="#yroom3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#yroom3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#yroom3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+             <div class="carousel-inner">
+                <div class="carousel-item active">
+                   <img src="img/doublestan-vlsex2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                   <img src="img/doublestan-vls3.jpg" class="d-block w-100" alt="...">   
+                </div>
+                <div class="carousel-item">
+                   <img src="img/queenhighstan.jpg" class="d-block w-100" alt="...">
+                </div>
+             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#yroom3" data-bs-slide="prev">
+               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+               <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#yroom3" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+         </a>
+      </div>
+ </div>
+</div>
+
+
+
+
+<div class="container-fluid-yroom4">
+  <div class="row">
+       <div class="col-6 yroom4 mt-3">
+             <a href="">
+                
+
+              <div id="yroom4" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#yroom4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#yroom4" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#yroom4" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                 <div class="carousel-inner">
+                    <div class="carousel-item active">
+                       <img src="img/kingsweet-vls.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                       <img src="img/bedroom.jpg" class="d-block w-100" alt="...">   
+                    </div>
+                    <div class="carousel-item">
+                       <img src="img/shower.jpg" class="d-block w-100" alt="...">
+                    </div>
+                 </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#yroom4" data-bs-slide="prev">
+                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                   <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#yroom4" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+
+             </a>
+       </div>
+       <div class="col-6 yroom4text mt-3">
+        <h2 class="yroom">シンギュラリティ・キング</h2>
+                 広々としたお部屋とVLSの相性は抜群です。<br>
+                 カップルでのご利用はもちろん、<br>お子様の遊園地代わりにもおすすめです。<br>
+                 宿泊人数：～6名様まで
+              <div class="mainbtn mt-2">
+               <a href="#" class="btn mainbtn btn-light ">
+                 予約する
+               </a>
+             </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+    <div class="container-fluid-yroom5">
+       <h2 id="yroom-title">－Various Landscape System－</h2>
+       <div class="row">
+          <div class="col-12 vlspic mt-3"><img src="img/VariousLandscapeSystem16-7.jpg" alt=""></div>
+          <div class="col-12 vlstext mt-4"><p>「Various Landscape System」の有無をお選びいただけます。”VLS”はあらゆる映像を再現いたします。目と鼻の先でご覧いただいても、映像だと思えません。VLSのサイズに応じて、追加料金が発生いたしますので予めご了承ください。</p></div>
+          <div class="vlsbtn"><a href="#" class="btn vlsbtn btn-light ">もっと見る</a>
+        </div>     
+    </div>
+
+
+
+
+    
+    <!--フッター-->
+<footer>
+  <div class="container-fluid footer mt-5">
+    <h3 class="footer-title">-Singularity Group-</h3>
+   <div class="row footer">
+     <div class="col-12 footertext mt-3">Singularity Groupに登録（無料）いただくと、最もお得な料金でご宿泊いただけます。<br>
+      また、会員予約限定で、優先アーリーチェックイン、レイトチェックアウト、アップグレード等の特典をご利用になれます。<br>
+      公式サイト会員制度「Singularity Group」について</div>
+   </div>
+
+  <div class="footerb mt-5"><a href="#" class="btn footerb btn-light ">会員登録(無料)</a></div>
+
+  <ul class="footer-nav mt-5">
+    <li class="footer-item">
+      <a class="nav-link active text-light" aria-current="page" href="#">よくあるご質問</a>
+    </li>
+    <li class="footer-item">
+      <a class="nav-link text-light" href="#">お問い合わせ</a>
+    </li>
+    <li class="footer-item">
+      <a class="nav-link text-light" href="#" tabindex="-1" aria-disabled="true">私たちについて</a>
+    </li>
+    <li class="footer-item">
+      <a class="nav-link text-light" href="#" tabindex="-1" aria-disabled="true">採用情報</a>
+    </li>
+    <li class="footer-item">
+      <a class="nav-link text-light" href="#" tabindex="-1" aria-disabled="true">会員制度・会員特典・ベストレート保証</a>
+    </li>
+    <li class="footer-item">
+      <a class="nav-link text-light" href="#" tabindex="-1" aria-disabled="true">宿泊約款</a>
+    </li>
+    <li class="footer-item">
+      <a class="nav-link text-light" href="#" tabindex="-1" aria-disabled="true">会員規約</a>
+    </li>
+    <li class="footer-item">
+      <a class="nav-link text-light" href="#" tabindex="-1" aria-disabled="true">プライバシーポリシー</a>
+    </li>
+  </ul>
+  
+</footer>
+</body>
+</html>

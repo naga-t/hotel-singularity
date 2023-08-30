@@ -1,0 +1,1163 @@
+html{font-size: 100%;}
+
+body{
+    background: linear-gradient(to bottom, #CCE0F4, #98c0e8, #005B97); 
+    height: 100vh;
+    background-attachment: fixed;   
+}
+
+.namehotel{
+    color: #ffffff;
+    text-align: center;
+}
+
+
+/*スライドショー*/
+.pcslide{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 53%;/*画像サイズ（縦）*/
+  }
+  .pcslide img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;/*ここまでポジション設定*/
+    animation-duration: 15s; /*長さ15秒*/
+    animation-iteration-count: infinite; /* 無限に再生を繰り返す*/
+    animation-name: slideAnime; /*アニメーション名*/ 
+    animation-timing-function: ease; /* 開始と完了を滑らかにする*/
+    opacity: 0; /* 透過設定*/
+  }
+  
+  @keyframes slideAnime {
+    0% {
+      opacity: 0;
+      transform: scale(1); /* 通常の大きさ */
+    }
+  
+    16% {
+      opacity: 1;
+    }
+  
+    33% {
+      opacity: 1;
+    }
+  
+    49% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 0;
+      transform: scale(1.15); /* 拡大 */
+    }
+  }
+
+  .pcslide img:nth-child(1){
+    animation-delay: 0s;
+  }
+  
+  .pcslide img:nth-child(2){
+    animation-delay: 5s;
+  }
+   
+  .pcslide img:last-child{
+    animation-delay: 10s;
+  }
+
+/*カルーセル失敗
+.carouselExample{
+    position: relative;
+    overflow: hidden;
+}
+.carousel-inner img{
+    display: flex;
+    animation: zoomAnimation 5s linear infinite;
+  }
+  .carousel-item {
+    flex-shrink: 0;
+  }
+  @keyframes zoomAnimation {
+    0% {
+      transform: scale(1); /* 通常の大きさ */
+ /*   }
+    100% {
+      transform: scale(1.1); /* 拡大 */
+/*   }
+  }
+*/
+
+.hotelname{
+    position: absolute;
+    text-align: center;
+    top: 28px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+.nav{
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    position: fixed;
+    top: 25%;
+    left: 2%;
+    z-index: 1;
+    font-size: 1em;
+    color: #ffffff;
+}
+.nav-item {
+    text-align: center;
+    font-size: 0.8em; 
+    background:
+      linear-gradient(currentColor 0 0) 0 100% /var(--d, 0) 1px no-repeat,
+      linear-gradient(currentColor 0 0) 100% calc(100% - 6px) /var(--d, 0) 1px no-repeat;
+    transition: 0s 0.4s, background-size 0.4s;
+  }
+  .nav-item:hover {
+    --d: 100%;
+    background-position: 0% calc(100% - 3px), 100% calc(100% - 3px);
+    transition: 0.3s, background-position 0.3s 0.3s;
+  }
+.nav p{
+    margin: 0;
+    text-align: center;
+}
+
+
+
+/*indexinfo*/
+.indexinfo-title{
+    font-size: 2.2rem;
+}
+.container-fluid-indexinfo{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.container-fluid-indexinfo img{
+    display: flex;
+    margin-right: 0;
+    margin-left: auto;
+    width: 60%;
+    padding: 5%;
+}
+.container-fluid-indexinfo a img:hover{
+	transform:scale(1.05);
+	transition:2.0s;
+}
+
+.indexinfo-text{
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    padding-bottom: 1%;
+}
+.indexinfo-text a{
+    color: #ffffff;
+}
+.indexinfo-btn{
+    width: 35%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.indexinfo-link{/*indexメインコンテンツボタン*/
+    display: flex;
+    justify-content: center;
+    color: #005B97;
+    font-size: 1rem;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 0;
+    position: relative;
+}
+  .indexinfo-link:before {/*ボタンの線*/
+    position: absolute;
+    top: calc(50% - 1px);
+    left: -480%;
+    width: 500%;
+    height: 1px;
+    content: '';
+    background: #ffffff;
+  }
+
+
+
+
+/*ここからindexメインコンテンツ*/
+.main{
+    color: #ffffff;
+    text-align: center;
+    margin-top: 10%;
+}
+.row{
+    --bs-gutter-x: 0;/*横幅がはみ出てたものを調整*/
+}
+
+.tec-title{
+    margin-top: 18%;
+}
+.container-fluid1{
+    position: relative;
+}
+.tectext{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    color: #ffffff;
+    z-index: 1;
+    position: absolute;
+    top: 200%;
+    left: 14%;
+    width: 40%;
+}
+.tectext span{
+    text-shadow: 1px 2px 3px #5d5d5d; 
+}
+.tec img{
+    position: absolute;
+    width: 45%;
+    right: 7%;
+}
+.tec a img:hover{/*本当は枠内に収めたかったけど、おそらくposition absoluteのせいでoverflow hiddenがきかない*/
+	transform:scale(1.05);
+	transition:2.0s;
+}
+
+.container-fluid2{
+    position: relative;
+    margin-top: 40%;
+}
+.room img{
+    position: absolute;
+    width: 45%;
+    left: 17%;
+}
+.room a img:hover{
+	transform:scale(1.05);
+	transition:2.0s;
+}
+.roomtext{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    color: #ffffff;
+    z-index: 1;
+    width: 40%;
+    right: 5%;
+    top: 200%;
+}
+.roomtext span{
+    text-shadow: 1px 2px 3px #5d5d5d; 
+}
+
+.container-fluid3{
+    position: relative;
+    margin-top: 40%;
+}
+.mealtext{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    color: #ffffff;
+    z-index: 1;
+    position: absolute;
+    top: 200%;
+    left: 14%;
+    width: 40%;
+}
+.mealtext span{
+    text-shadow: 1px 2px 3px #5d5d5d; 
+}
+.meal img{
+    position: absolute;
+    width: 45%;
+    right: 7%;
+}
+.meal a img:hover{
+	transform:scale(1.05);
+	transition:2.0s;
+}
+
+
+.mainbtn-link{/*indexメインコンテンツボタン*/
+    display: flex;
+    justify-content: center;
+    color: #005B97;
+    font-size: 1rem;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 0;
+    position: relative;
+}
+  .mainbtn-link:before {/*ボタンの線*/
+    position: absolute;
+    top: calc(50% - 1px);
+    left: -480%;
+    width: 500%;
+    height: 1px;
+    content: '';
+    background: #ffffff;
+  }
+  .mainbtn a:hover {
+    background-color: #04076b;
+    color: #ffffff;
+  }
+
+  .access-title{
+    margin-top: 40%;
+    text-align: center;
+    color: #ffffff;
+  }
+  .access-map{
+    text-align: center;
+  }
+  
+  iframe{
+    margin-top: 2%;
+    margin-right: auto;
+    margin-left: auto;
+    width: 60%;
+    
+  }
+ .access-text{
+   margin-top: 2%;
+   text-align: center;
+   color: #ffffff;
+ }  
+
+
+/*Your Room*/
+
+.room-intro{
+    color: #ffffff;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.room-intro-link{
+    margin-top: 3px;
+}
+.room-intro-link a{
+    color: #ffffff;
+}
+.room-intro-link a:hover{
+    color: #04076b;
+}
+
+
+.yroom{/*your room共通クラス*/
+    color: #ffffff;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.container-fluid-yroom1{
+    position: relative;
+}
+.yroom1text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #ffffff;
+    z-index: 1;
+    position: absolute;
+    top: 200%;
+    left: 14%;
+    width: 40%;
+}
+.yroom1text h2{
+        text-shadow: 1px 2px 3px #5d5d5d; 
+}
+.yroom1text span{
+    text-shadow: 1px 2px 3px #5d5d5d; 
+}
+.yroom1{
+    position: absolute;
+    width: 45%;
+    right: 7%;
+}
+.yroom1 a img:hover{/*本当は枠内に収めたかったけど、おそらくposition absoluteのせいでoverflow hiddenがきかない*/
+	transform:scale(1.05);
+	transition:2.0s;
+}
+
+
+.container-fluid-yroom2{
+    position: relative;
+    margin-top: 40%;
+}
+.yroom2{
+    position: absolute;
+    width: 45%;
+    left: 17%;
+}
+.yroom2 a img:hover{
+	transform:scale(1.05);
+	transition:2.0s;
+}
+.yroom2text{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #ffffff;
+    width: 40%;
+    right: 5%;
+    top: 200%;
+}
+.yroom2text h2{
+    text-shadow: 1px 2px 3px #5d5d5d; 
+}
+.yroom2text span{
+text-shadow: 1px 2px 3px #5d5d5d; 
+}
+
+
+.container-fluid-yroom3{
+    position: relative;
+    margin-top: 40%;
+}
+.yroom3text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #ffffff;
+    z-index: 1;
+    position: absolute;
+    top: 200%;
+    left: 14%;
+    width: 40%;
+}
+.yroom3text h2{
+    text-shadow: 1px 2px 3px #5d5d5d; 
+}
+.yroom3text span{
+text-shadow: 1px 2px 3px #5d5d5d; 
+}
+.yroom3{
+    position: absolute;
+    width: 45%;
+    right: 7%;
+}
+.yroom3 a img:hover{
+	transform:scale(1.05);
+	transition:2.0s;
+}
+
+
+
+.container-fluid-yroom4{
+    position: relative;
+    margin-top: 40%;
+}
+.yroom4{
+    position: absolute;
+    width: 45%;
+    left: 17%;
+}
+.yroom4 a img:hover{
+	transform:scale(1.05);
+	transition:2.0s;
+}
+.yroom4text{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #ffffff;
+   
+    width: 40%;
+    right: 5%;
+    top: 200%;
+}
+.yroom4text h2{
+    text-shadow: 1px 2px 3px #5d5d5d; 
+}
+.yroom4text span{
+text-shadow: 1px 2px 3px #5d5d5d; 
+}
+
+.container-fluid-yroom5{
+    margin-top: 50%;
+}
+#yroom-title{
+    margin-top: 2%;
+    color: #ffffff;
+    text-align: center;
+    background: linear-gradient(to right, #a107c4,#4e0045, #fe0000);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 2.5rem;
+}
+.yroom-title{
+    margin-top: 2%;
+    color: #ffffff;
+    text-align: center;
+}
+
+.yroompic{
+    display: flex;
+    justify-content: center;
+}
+.yroompic img{
+    width: 60%;
+}
+.yroomtext{
+    display: flex;
+    justify-content: center;
+}
+.yroomtext p{
+    font-size: 1rem;
+    width: 60%;
+    color: #ffffff;
+}
+
+
+.yroom-link{/*客室ボタンの幅*/
+    width: 75%;
+}
+
+.vls-h{
+    margin-top: 2%;
+    margin-bottom: 0;
+    font-size: 1.5rem;
+}
+.vlspic img{
+    width: 100%;
+}
+.vlstext{
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+}
+.vlstext p{
+    width: 60%;
+    color: #ffffff;
+}
+.vlsbtn{/*vlsボタン*/
+    display: flex;
+    justify-content: center;
+    color: #005B97;
+    font-size: 1.5rem;
+    padding: 1% 12% 1% 12%;
+    border-radius: 0;
+}
+  .vlsbtn a:hover {
+    background-color: #04076b;
+    color: #ffffff;
+  }
+
+
+.container-fluid-yroom6{
+    width: 70%;
+    margin: 20% 15% 10% 15%;
+}
+
+.whiteline-box{
+    width: 40%;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid #fff;
+    color: #ffffff;
+    padding: 5%;
+    line-height: 2.28571;
+}
+
+
+
+
+/*VLS特集ページ*/
+.container-fluid-vlsfeature{
+    color: #ffffff;
+    text-align: center;
+    margin-top: 10%;
+}
+.vlsfeature{
+    width: 70%;
+    margin: 10% 15% 10% 15%;
+}
+
+
+
+
+
+
+
+/*Q＆A*/
+.qa-title{
+    color: #ffffff;
+    text-align: center;
+    margin-top: 5%!important;
+    font-size: 2.5rem;
+}
+h4{
+    margin-top: 8%!important;
+    font-size: 1.3rem;
+}
+.accordion-button{
+    background: transparent;
+    width: auto;
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+    border-bottom-left-radius: calc(0.25rem - 1px);
+    border-bottom-right-radius: calc(0.25rem - 1px);
+    padding: 2%;
+    color: #ffffff;
+}
+
+.accordion-button:not(.collapsed){
+    background: transparent;
+    color: #ffffff;
+}
+.accordion-item{
+    background: transparent;
+    margin-right: 20%;
+    margin-left: 20%;
+    border: none;
+    color: #fefefe;
+    text-shadow: 1px 2px 3px #5d5d5d; 
+}
+
+
+
+/*infomation*/
+.info-title{
+    font-size: 2.5rem;
+    margin-top: 8%!important;
+}
+.card{
+    color: #ffffff;
+    background: transparent;
+    text-shadow: 1px 2px 3px #5d5d5d; 
+    overflow: hidden;
+    margin-top: 20%;
+    margin-bottom: 10%;
+}
+.infopic{
+    display: flex;
+    justify-content: center;
+}
+.infopic img{
+    margin-top: 4%;
+    width: 40%;
+}
+.card a img:hover{
+	transform:scale(1.05);
+	transition:2.0s;
+}
+
+.container{
+    width: 70%;
+}
+.infocard-btn{
+    text-shadow: none;
+    color: #005B97;
+    border-radius: 0;
+}
+.infocard-btn :hover{
+    background: #04076b;
+    color: #ffffff;
+}
+
+.infob{/*infoボタン*/
+    display: flex;
+    justify-content: center;
+    color: #005B97;
+    border-radius: 0;
+    padding: 1% 10% 1% 10%;
+    margin-top: 4%;
+    font-size: 1.2rem;
+}
+.infob a:hover{
+    background: #04076b;
+    color: #ffffff;
+}
+.vlsbtn{/*vlsボタン*/
+    display: flex;
+    justify-content: center;
+    color: #005B97;
+    font-size: 1.5rem;
+    
+    border-radius: 0;
+}
+  .vlsbtn a:hover {
+    background-color: #04076b;
+    color: #ffffff;
+  }
+
+
+
+/*フッター*/
+.footer-title{
+    font-size: 1.2rem;
+    margin-top: 20%;
+    text-align: center;
+    color: #ffffff;
+}
+.footertext{
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #ffffff;
+    text-align: center;
+    font-size: 0.7rem;
+}
+.footerb{/*フッターボタン*/
+    display: flex;
+    justify-content: center;
+    color: #005B97;
+    font-size: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 0;
+}
+  .footerb a:hover {
+      background-color: #04076b;
+      color: #ffffff;
+  }
+.footer-nav{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    font-size: 0.7rem;
+}
+.footer-item{
+    display: flex;
+    justify-content: center;
+}
+.footer-item .nav-link::after{
+    margin-left: 24px;
+    content: "/";
+}
+   /*indexフッター*/
+   .indexfooter-title{/*レイアウトが違うからマージントップ取る必要があり、分けてある*/
+    font-size: 1.2rem;
+    margin-top: 20%;
+    text-align: center;
+    color: #ffffff;
+   }
+
+   .copywrite{
+    text-align: center;
+    color: #ffffff;
+    padding-bottom: 25px;
+   }
+
+
+@media (min-width:1200px){
+    html{font-size: 1.3rem;}
+    .hotelname{
+        margin-top: 2%;
+    }
+   
+    /*indexメインコンテンツ*/
+    .container-fluid1{
+        margin-top: 10%;
+    }
+    .container-fluid2{
+        margin-top: 36%;
+    }
+    .row .tec img{
+        width: 40%;
+        right: 14%;
+        margin-top: 2%;
+    }
+    .tectext{
+        width: 30%;
+        left: 18%;
+        top: 270%;
+    }
+    .row .room img{ /*index客室*/
+        width: 40%;
+        left: 19%;
+        margin-top: 2%;
+    }
+    .roomtext{
+        width: 30%;
+        right: 14%;
+        top: 270%;
+    }
+    .row .meal img{
+        width: 40%;
+        right: 14%;
+        margin-top: 2%;
+    }
+    .mealtext{
+        width: 30%;
+        left: 18%;
+        top: 270%;
+    }
+    /*フッター*/
+    .indexfooter-title{/*indexフッター*/
+        font-size: 1.4rem;
+        margin-top: 15%;
+    }
+    .footertext{
+        font-size: 0.8rem;
+        margin-top: 100px;
+    }
+    .footerb{/*フッターボタン*/
+        display: flex;
+        justify-content: center;
+        color: #005B97;
+        padding-left: 5%;
+        padding-right: 5%;
+        border-radius: 0;
+    }
+    .footer-nav{
+        font-size: 0.6rem;
+    }
+
+}
+
+@media (min-width:768px){
+    .nav-sp{
+        display: none;
+    }
+    .access-sp-map{/*スマホ版アクセス非表示*/
+        display: none;
+      }
+    .access-sp-text{/*スマホ版アクセス非表示*/
+        display: none;
+      }
+}
+@media (max-width:767px){
+    html{
+        font-size: 90%;
+    }
+    .pcslide{
+        padding-top: 75%;/*画像サイズ（縦）4:3*/
+      }
+    /*スマホ版ナビバー*/
+    .nav{
+        display: none;
+    }
+    .nav-sp{
+        position: fixed;
+        z-index: 1000;
+        right: 0;
+    }
+    .offcanvas{
+        background: linear-gradient(to bottom, #CCE0F4, #98c0e8, #005B97); 
+        height: 100vh;
+        background-attachment: fixed;   
+    }
+    .offcanvas-title{
+        color: #ffffff;
+        text-align: center;
+    }
+    .nav-sp-list p{
+        text-align: center;
+        color: #ffffff;
+        font-size: 1.5rem;
+        text-shadow: 1px 2px 3px #aaaaaa; 
+    }
+    .nav-sp-item{
+        text-align: center;
+        list-style: none;
+        text-shadow: 1px 2px 3px #aaaaaa; 
+        font-size: 1.2rem;
+    }
+
+/*indexinfo*/
+    .container-fluid-indexinfo{
+        width: 90%;
+    }
+    .indexinfo-btn{
+        width: 40%;
+    }
+
+/*indexスマホレイアウト*/
+    .tectext{
+        position: static;
+        width: 90%;
+        margin-right: 5%;
+        margin-left: 5%;
+        }
+    .tec img{
+        position: static;
+        width: 90%;
+        margin-right: 5%;
+        margin-left: 5%;      
+    }
+
+
+    .container-fluid2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 0;
+    }
+    .roomtext{
+        position: static;
+        text-align: justify;
+        color: #ffffff;
+        width: 90%;
+        margin-right: 5%;
+        margin-left: 5%;
+        }
+    .roomtext span{
+        text-shadow: 1px 2px 3px #5d5d5d; 
+    }
+    .room img{
+        position: static;
+        width: 90%;
+        margin-right:5%;
+        margin-left: 5%;      
+    }
+    .room a img:hover{/*本当は枠内に収めたかったけど、おそらくposition absoluteのせいでoverflow hiddenがきかない*/
+        transform:scale(1.05);
+        transition:2.0s;
+    }
+
+    .container-fluid3{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 0;
+    }
+    .mealtext{
+        position: static;
+        text-align: justify;
+        color: #ffffff;
+        width: 90%;
+        margin-right: 5%;
+        margin-left: 5%;
+        }
+    .mealtext span{
+        text-shadow: 1px 2px 3px #5d5d5d; 
+    }
+    .meal img{
+        position: static;
+        width: 90%;
+        margin-right: 5%;
+        margin-left: 5%;      
+    }
+    .meal a img:hover{/*本当は枠内に収めたかったけど、おそらくposition absoluteのせいでoverflow hiddenがきかない*/
+        transform:scale(1.05);
+        transition:2.0s;
+    }
+    .mainbtn{/*indexメインコンテンツボタン*/
+        font-size: 1.5rem;
+        width: 100%;
+    }
+    .access-title{
+        margin-top: 20%;
+        text-align: center;
+        color: #ffffff;
+      }
+      .access-map{/*PC版アクセス非表示*/
+        display: none;
+      }
+      .access-text{
+        display: none;
+      }
+      .access-sp-map{
+        text-align: center;
+      }
+      iframe{
+        width: 90%;
+      }
+     .access-sp-text{
+       margin-top: 2%;
+       text-align: center;
+       color: #ffffff;
+     }  
+
+    
+    /*Your Roomスマホレイアウト*/
+     .room-intro{
+        margin-top: 13%;
+     }
+     .yroom{/*見出し*/
+        margin-top: 3%;
+        margin-bottom: 4%;
+        position: static;
+    }
+
+
+     .container-fluid-yroom1{
+        margin-top: 10%;
+    }
+    .yroom1text{
+        position: static;
+        text-align: center;
+        width: 80%;
+        margin-top: 0;
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+    .yroom1text span{
+        margin-bottom: 1%;
+    }
+    .yroom1{/*スライドショー*/
+        position: static;
+        width: 90%;
+        margin-right: 5%;
+        margin-left: 5%;      
+    }
+    
+    .container-fluid-yroom2{
+        margin-top: 10%;
+    }
+    .yroom2text{
+        position: static;
+        text-align: center;
+        color: #ffffff;
+        width: 80%;
+        margin-top: 0;
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+    .yroom2text span{
+        margin-bottom: 1%;
+    }
+    .yroom2{/*スライドショー*/
+        position: static;
+        width: 90%;
+        margin-right: 5%;
+        margin-left: 5%;      
+    }
+
+
+    .container-fluid-yroom3{
+        margin-top: 10%;
+    }
+    .yroom3text{
+        position: static;
+        text-align: center;
+        width: 80%;
+        margin-top: 0;
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+    .yroom3text span{
+        margin-bottom: 1%;
+    }
+    .yroom3{/*スライドショー*/
+        position: static;
+        width: 90%;
+        margin-right: 5%;
+        margin-left: 5%;      
+    }
+
+
+    .container-fluid-yroom4{
+        margin-top: 10%;
+    }
+    .yroom4text{
+        position: static;
+        text-align: center;
+        color: #ffffff;
+        width: 80%;
+        margin-top: 0;
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+    .yroom4text span{
+        margin-bottom: 1%;
+    }
+    .yroom4{/*スライドショー*/
+        position: static;
+        width: 90%;
+        margin-right: 5%;
+        margin-left: 5%;      
+    }
+   
+
+    #yroom-title{/*vls*/
+        margin-top: -25%;
+        font-size: 1.8rem;
+    }
+    .vlstext p{
+        width: 80%;
+    }
+    .vlsbtn{/*vlsボタン*/
+        display: flex;
+        justify-content: center;
+        color: #005B97;
+        font-size: 1.5rem;
+        border-radius: 0;
+        font-size: 1.5rem;
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+
+    .whiteline-box{
+        width: 80%;
+    }
+    
+
+/*アメニティ&ファシリティ*/
+    .container-fluid-yroom6{
+        width: 90%;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+
+
+
+.accordion-item{
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+
+
+
+
+/*info*/
+    .container{
+        width: 90%;
+    }
+    .infopic img{
+        margin-top: 5%;
+        width: 70%;
+    }
+
+
+ /*フッター*/
+   .footer-title{
+        margin-top: 30%;
+    }
+    .footertext{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footerb{/*フッターボタン*/
+        width: 80%;
+        font-size: 1.2rem;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 0;
+    } 
+    .footer-nav{
+        margin-top: 5%;
+        width: 100%;
+    }
+   
+    .indexfooter-title{/*indexフッター*/
+        margin-top: 20%;
+    }
+}
