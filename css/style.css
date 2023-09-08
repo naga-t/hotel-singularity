@@ -363,8 +363,13 @@ body{
     margin-top: 10%;
 }
 
-.container-fluid-yroom1{
+.container-fluid-yroom1{/*一番上*/
     position: relative;
+    margin-top: 8%;
+}
+.container-fluid-yroom2,.container-fluid-yroom3,.container-fluid-yroom4{/*2〜vls手前まで*/
+    position: relative;
+    margin-top: 40%;
 }
 .yroom1text{
     display: flex;
@@ -394,10 +399,6 @@ body{
 }
 
 
-.container-fluid-yroom2{
-    position: relative;
-    margin-top: 40%;
-}
 .yroom2{
     position: absolute;
     width: 45%;
@@ -424,11 +425,6 @@ body{
 text-shadow: 1px 2px 3px #5d5d5d; 
 }
 
-
-.container-fluid-yroom3{
-    position: relative;
-    margin-top: 40%;
-}
 .yroom3text{
     display: flex;
     flex-direction: column;
@@ -456,12 +452,6 @@ text-shadow: 1px 2px 3px #5d5d5d;
 	transition:2.0s;
 }
 
-
-
-.container-fluid-yroom4{
-    position: relative;
-    margin-top: 40%;
-}
 .yroom4{
     position: absolute;
     width: 45%;
@@ -826,7 +816,17 @@ h4{
     }
 
 }
-
+@media (min-width:768px) and (max-width:1199px){
+    /*Your Room*/
+    .container-fluid-yroom1{/*一番上*/
+        position: relative;
+        margin-top: 13%;
+    }
+    .container-fluid-yroom2,.container-fluid-yroom3,.container-fluid-yroom4{/*2〜vls手前まで*/
+        position: relative;
+        margin-top: 50%;
+    }
+}
 @media (min-width:768px){
     .nav-sp{
         display: none;
@@ -898,12 +898,12 @@ h4{
         margin-left: 5%;      
     }
 
-
-    .container-fluid2{
+    .tec-title{margin-top: 25%;}
+    .container-fluid2,.container-fluid3{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-top: 0;
+        margin-top: 15%;
     }
     .roomtext{
         position: static;
@@ -927,12 +927,6 @@ h4{
         transition:2.0s;
     }
 
-    .container-fluid3{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-top: 0;
-    }
     .mealtext{
         position: static;
         text-align: justify;
@@ -984,17 +978,16 @@ h4{
     
     /*Your Roomスマホレイアウト*/
      .room-intro{
-        margin-top: 13%;
+        margin-top: 7%;
      }
      .yroom{/*見出し*/
         margin-top: 3%;
         margin-bottom: 4%;
         position: static;
     }
-
-
-     .container-fluid-yroom1{
-        margin-top: 10%;
+    .container-fluid-yroom1{margin-top: 13%;}
+    .container-fluid-yroom2,.container-fluid-yroom3,.container-fluid-yroom4{/*2〜vls手前まで*/
+        margin-top: 20%;
     }
     .yroom1text{
         position: static;
@@ -1013,10 +1006,7 @@ h4{
         margin-right: 5%;
         margin-left: 5%;      
     }
-    
-    .container-fluid-yroom2{
-        margin-top: 10%;
-    }
+   
     .yroom2text{
         position: static;
         text-align: center;
@@ -1035,11 +1025,6 @@ h4{
         margin-right: 5%;
         margin-left: 5%;      
     }
-
-
-    .container-fluid-yroom3{
-        margin-top: 10%;
-    }
     .yroom3text{
         position: static;
         text-align: center;
@@ -1056,11 +1041,6 @@ h4{
         width: 90%;
         margin-right: 5%;
         margin-left: 5%;      
-    }
-
-
-    .container-fluid-yroom4{
-        margin-top: 10%;
     }
     .yroom4text{
         position: static;
@@ -1084,7 +1064,7 @@ h4{
 
     #yroom-title{/*vls*/
         margin-top: -25%;
-        font-size: 1.7rem;
+        font-size: 1.8rem;
     }
     .vlstext p{
         width: 80%;
@@ -1104,6 +1084,7 @@ h4{
 
     .whiteline-box{
         width: 80%;
+        margin-top: 28%;
     }
     
 
@@ -1112,6 +1093,7 @@ h4{
         width: 90%;
         margin-right: 5%;
         margin-left: 5%;
+        margin-top: 25%;
     }
 
 
