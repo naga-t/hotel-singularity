@@ -633,8 +633,7 @@ h4{
     background: transparent;
     text-shadow: 1px 2px 3px #5d5d5d; 
     overflow: hidden;
-    margin-top: 20%;
-    margin-bottom: 10%;
+    margin: 20% 3% 10% 3%;
 }
 .infopic{
     display: flex;
